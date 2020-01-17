@@ -1,5 +1,7 @@
 # egg-alipay
 
+[Official Document](https://www.yuque.com/chenqiu/alipay-node-sdk)
+
 ## Install
 
 ```bash
@@ -12,7 +14,7 @@ npm i @axolo/egg-alipay --save
 // {app_root}/config/plugin.js
 exports.alipay = {
   enable: true,
-  package: 'egg-alipay',
+  package: '@axolo/egg-alipay',
 };
 ```
 
