@@ -1,0 +1,62 @@
+{
+  "name": "@axolo/egg-alipay",
+  "version": "0.1.0",
+  "description": "Alipay plugin for Egg.js.",
+  "eggPlugin": {
+    "name": "alipay"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "alipay",
+    "egg-alipay",
+    "支付宝",
+    "支付宝接入"
+  ],
+  "dependencies": {
+    "alipay-sdk": "^3.0.8"
+  },
+  "devDependencies": {
+    "autod": "^3.1.0",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.26.0",
+    "egg-bin": "^4.14.1",
+    "egg-ci": "^1.13.1",
+    "egg-mock": "^3.25.0",
+    "eslint": "^6.8.0",
+    "eslint-config-egg": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config",
+    "app",
+    "lib"
+  ],
+  "ci": {
+    "version": "8, 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axolo/egg-alipay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/axolo/egg-alipay/issues"
+  },
+  "homepage": "https://github.com/axolo/egg-alipay#readme",
+  "author": "Yueming Fang",
+  "license": "MIT"
+}
