@@ -8,6 +8,7 @@
  */
 exports.alipay = {
   default: {
+    AlipaySdk: require('alipay-sdk').default,
     gateway: 'https://openapi.alipay.com/gateway.do',
   },
   // client: {

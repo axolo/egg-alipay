@@ -2,8 +2,8 @@
 
 const Alipay = require('./lib/alipay');
 
-const createAlipay = (config, app) => {
-  const alipay = new Alipay(config, app);
+const createAlipay = config => {
+  const alipay = new Alipay(config);
   return alipay;
 };
 
